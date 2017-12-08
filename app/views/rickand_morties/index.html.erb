@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Rickand Morties</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Comment</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @rickand_morties.each do |rickand_morty| %>
+      <tr>
+        <td><%= rickand_morty.comment %></td>
+        <td><%= link_to 'Show', rickand_morty %></td>
+        <td><%= link_to 'Edit', edit_rickand_morty_path(rickand_morty) %></td>
+        <td><%= link_to 'Destroy', rickand_morty, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Rickand Morty', new_rickand_morty_path %>

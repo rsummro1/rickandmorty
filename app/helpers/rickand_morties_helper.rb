@@ -1,0 +1,2 @@
+module RickandMortiesHelper
+end

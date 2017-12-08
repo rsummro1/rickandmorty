@@ -1,0 +1,2 @@
+class RickandMorty < ApplicationRecord
+end
